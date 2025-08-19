@@ -1,10 +1,3 @@
-
----
-#### **`README.md`**
-
-Finally, the instructions for yourself and others.
-
-````markdown
 # My Digital Garden - A Notes Website
 
 This is a clean, beautiful, and feature-rich website for personal notes, built with Jekyll and designed for deployment on GitHub Pages.
