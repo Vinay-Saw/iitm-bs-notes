@@ -1,0 +1,14 @@
+<a href="{{ note.url | relative_url }}" class="note-card" data-category="{{ note.category }}">
+  <h3 class="note-card-title">{{ note.title }}</h3>
+  <p class="note-card-excerpt">
+    {% if note.excerpt %}
+      {{ note.excerpt | strip_html | truncatewords: 25 }}
+    {% else %}
+      {{ note.content | strip_html | truncatewords: 25 }}
+    {% endif %}
+  </p>
+  <div class="note-card-meta">
+    <span class="note-card-category" data-category="{{ note.category }}">{{ note.category }}</span>
+    <time class="note-card-date">{{ note.date | date: "%b %-d, %Y" }}</time>
+  </div>
+</a>
