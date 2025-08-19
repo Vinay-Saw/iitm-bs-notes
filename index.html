@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+<div class="filter-container">
+  <input type="search" id="search-input" placeholder="Search all notes..." aria-label="Search all notes">
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="Mathematics">Mathematics</button>
+    <button class="filter-btn" data-category="Code">Code</button>
+    <button class="filter-btn" data-category="General">General</button>
+  </div>
+</div>
+
+<div id="search-results" class="search-results-container"></div>
+
+<div class="notes-grid" id="notes-grid">
+  {% assign all_notes = site.mathematics | concat: site.code | concat: site.general | sort: 'date' | reverse %}
+  {% for note in all_notes %}
+    {% include note_card.html note=note %}
+  {% endfor %}
+</div>
