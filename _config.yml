@@ -1,11 +1,11 @@
 title: "My Digital Garden"
-author: "Your Name"
-email: "your-email@example.com"
+author: "Vinay Kumar"
+email: "vinaysaw@duck.com"
 description: >-
   A beautifully organized collection of notes on mathematics, code, and everything in between.
-baseurl: "" # the subpath of your site, e.g. /blog. For root, use ""
-url: "https://your-username.github.io" # the base hostname & protocol for your site
-github_username: your-username
+baseurl: "/iitm-bs-notes" # the subpath of your site, e.g. /blog. For root, use ""
+url: "https://vinay-saw.github.io" # the base hostname & protocol for your site
+github_username: vinay-saw
 
 # Build settings
 theme: minima # A default theme is required but we will override it
