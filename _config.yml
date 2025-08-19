@@ -1,0 +1,56 @@
+title: "My Digital Garden"
+author: "Your Name"
+email: "your-email@example.com"
+description: >-
+  A beautifully organized collection of notes on mathematics, code, and everything in between.
+baseurl: "" # the subpath of your site, e.g. /blog. For root, use ""
+url: "https://your-username.github.io" # the base hostname & protocol for your site
+github_username: your-username
+
+# Build settings
+theme: minima # A default theme is required but we will override it
+plugins:
+  - jekyll-feed
+
+# Collections setup for notes
+collections:
+  mathematics:
+    output: true
+    permalink: /mathematics/:slug/
+  code:
+    output: true
+    permalink: /code/:slug/
+  general:
+    output: true
+    permalink: /general/:slug/
+
+# Defaults for posts in collections
+defaults:
+  - scope:
+      path: ""
+      type: "mathematics"
+    values:
+      layout: "post"
+      category: "Mathematics"
+  - scope:
+      path: ""
+      type: "code"
+    values:
+      layout: "post"
+      category: "Code"
+  - scope:
+      path: ""
+      type: "general"
+    values:
+      layout: "post"
+      category: "General"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
